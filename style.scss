@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+$palette: (
+  blue: #0e6cff,
+  purple: #640fc5,
+  orange: #ff8700,
+  green: #4caf50,
+);
+
+@each $val, $color in $palette {
+  .bc-#{$val} {
+    background-color: $color;
+  }
+}
+
+header {
+  margin-bottom: 2rem;
+  nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    border-bottom: 2px solid darkmagenta;
+    margin-bottom: 1rem;
+    div {
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 50px;
+      }
+      a {
+        margin-inline: 0.5rem;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      h1 {
+        margin: 0;
+      }
+      p {
+        font-style: italic;
+        margin-top: 0;
+      }
+      div {
+        justify-content: start;
+        button {
+          display: inline-block;
+          border: none;
+          margin-right: 1rem;
+          cursor: pointer;
+          width: fit-content;
+          &::hover {
+            border: 2px solid white;
+            color: white;
+          }
+        }
+      }
+    }
+    div {
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
+
+section {
+  background-color: bisque;
+  padding: 1.5rem;
+  h2 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      border: 2px solid gray;
+      background-color: white;
+
+      img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+      }
+      div {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
