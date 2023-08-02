@@ -3,16 +3,36 @@
   background-color: #0e6cff;
 }
 
+.bc-blue:hover {
+  background-color: #0041a7;
+  color: white;
+}
+
 .bc-purple {
   background-color: #640fc5;
+}
+
+.bc-purple:hover {
+  background-color: #340866;
+  color: white;
 }
 
 .bc-orange {
   background-color: #ff8700;
 }
 
+.bc-orange:hover {
+  background-color: #995100;
+  color: white;
+}
+
 .bc-green {
   background-color: #4caf50;
+}
+
+.bc-green:hover {
+  background-color: #2d682f;
+  color: white;
 }
 
 header div div:first-child div button {
@@ -127,6 +147,10 @@ body .container {
   margin-block: 40px;
 }
 
+.background {
+  background-color: #640fc5;
+}
+
 header {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 2rem;
@@ -221,10 +245,6 @@ header div div:first-child div button {
     translate: 0px 5px;
     opacity: 1;
   }
-}
-header div div:first-child div button:hover {
-  background-color: gray;
-  color: white;
 }
 header div div img {
   height: 200px;

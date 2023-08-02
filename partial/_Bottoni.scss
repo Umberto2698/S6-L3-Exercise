@@ -5,9 +5,13 @@ $palette: (
   green: #4caf50,
 );
 
-@each $val, $color in $palette {
+@each $val, $c in $palette {
   .bc-#{$val} {
-    background-color: $color;
+    background-color: $c;
+  }
+  .bc-#{$val}:hover {
+    background-color: darken($color: $c, $amount: 20%);
+    color: white;
   }
 }
 
