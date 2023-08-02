@@ -220,7 +220,7 @@ header div div:first-child div button {
     opacity: 1;
   }
 }
-header div div:first-child div button::hover {
+header div div:first-child div button:hover {
   border: 2px solid white;
   color: white;
 }

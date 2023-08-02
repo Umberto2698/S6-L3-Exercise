@@ -51,7 +51,7 @@ header {
         button {
           @extend %hero-btn;
           @include fade-in(5s, 15px, 5px, 1.5s, button);
-          &::hover {
+          &:hover {
             border: 2px solid white;
             color: white;
           }
