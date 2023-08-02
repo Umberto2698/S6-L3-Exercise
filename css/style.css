@@ -198,6 +198,8 @@ header div div:first-child p {
 }
 header div div:first-child div {
   justify-content: start;
+  height: 30px;
+  padding: 1rem;
 }
 header div div:first-child div button {
   animation: fadeInBtn 5s 1.5s both ease-out;
@@ -221,7 +223,7 @@ header div div:first-child div button {
   }
 }
 header div div:first-child div button:hover {
-  border: 2px solid white;
+  background-color: gray;
   color: white;
 }
 header div div img {

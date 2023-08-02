@@ -48,11 +48,13 @@ header {
       }
       div {
         justify-content: start;
+        height: 30px;
+        padding: 1rem;
         button {
           @extend %hero-btn;
           @include fade-in(5s, 15px, 5px, 1.5s, button);
           &:hover {
-            border: 2px solid white;
+            background-color: darken($color: gray, $amount: 0);
             color: white;
           }
         }
