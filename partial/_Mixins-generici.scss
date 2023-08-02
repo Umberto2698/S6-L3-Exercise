@@ -9,3 +9,10 @@
     border: 1px solid lightgray;
   }
 }
+
+@mixin grid($n) {
+  display: grid;
+  grid-template-columns: repeat($n, auto);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}

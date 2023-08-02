@@ -210,4 +210,11 @@ section .flex > div img {
 }
 section .flex > div div {
   padding: 0.5rem;
+}
+
+.prova {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
 }/*# sourceMappingURL=style.css.map */
