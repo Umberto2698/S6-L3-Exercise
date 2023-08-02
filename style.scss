@@ -1,31 +1,20 @@
-body {
-  margin: 0;
-  .container {
-    padding: 1.5rem;
-  }
-}
-
-$palette: (
-  blue: #0e6cff,
-  purple: #640fc5,
-  orange: #ff8700,
-  green: #4caf50,
-);
-
-@each $val, $color in $palette {
-  .bc-#{$val} {
-    background-color: $color;
-  }
-}
+@import "./partial/Animazioni";
+@import "./partial/Bottoni";
+@import "./partial/Colori";
+@import "./partial/Font";
+@import "./partial/Mixins-generici";
+@import "./partial/Reset";
+@import "./partial/Spaziature";
 
 header {
+  font-family: $family;
   margin-bottom: 2rem;
   nav {
     display: flex;
     align-items: center;
     height: 70px;
     text-align: center;
-    border-bottom: 2px solid darkmagenta;
+    border-bottom: 2px solid $darkmagenta;
     margin-bottom: 1rem;
     div {
       display: flex;
@@ -34,7 +23,6 @@ header {
         max-width: 50px;
       }
       a {
-        margin-inline: 0.5rem;
         color: white;
         text-decoration: none;
       }
@@ -50,6 +38,7 @@ header {
       flex-grow: 1;
       h1 {
         margin: 0;
+        @include title-big($h1);
       }
       p {
         font-style: italic;
@@ -58,11 +47,7 @@ header {
       div {
         justify-content: start;
         button {
-          display: inline-block;
-          border: none;
-          margin-right: 1rem;
-          cursor: pointer;
-          width: fit-content;
+          @extend %hero-btn;
           &::hover {
             border: 2px solid white;
             color: white;
@@ -79,7 +64,8 @@ header {
 }
 
 section {
-  background-color: bisque;
+  font-family: $family;
+  background-color: $bisque;
   padding: 1.5rem;
   h2 {
     font-size: 30px;

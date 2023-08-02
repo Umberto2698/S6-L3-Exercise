@@ -1,10 +1,4 @@
-body {
-  margin: 0;
-}
-body .container {
-  padding: 1.5rem;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 .bc-blue {
   background-color: #0e6cff;
 }
@@ -21,7 +15,120 @@ body .container {
   background-color: #4caf50;
 }
 
+header div div:first-child div button {
+  font-family: inherit;
+  display: inline-block;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+body {
+  margin: 0;
+}
+body .container {
+  padding: 1.5rem;
+}
+
+.p-in-sm {
+  padding-inline: 10px;
+}
+
+.p-in-normal {
+  padding-inline: 15px;
+}
+
+.p-in-md {
+  padding-inline: 20px;
+}
+
+.p-in-lg {
+  padding-inline: 25px;
+}
+
+.p-in-xl {
+  padding-inline: 30px;
+}
+
+.p-in-xxl {
+  padding-inline: 40px;
+}
+
+.p-bl-sm {
+  padding-block: 10px;
+}
+
+.p-bl-normal {
+  padding-block: 15px;
+}
+
+.p-bl-md {
+  padding-block: 20px;
+}
+
+.p-bl-lg {
+  padding-block: 25px;
+}
+
+.p-bl-xl {
+  padding-block: 30px;
+}
+
+.p-bl-xxl {
+  padding-block: 40px;
+}
+
+.m-in-sm {
+  margin-inline: 10px;
+}
+
+.m-in-normal {
+  margin-inline: 15px;
+}
+
+.m-in-md {
+  margin-inline: 20px;
+}
+
+.m-in-lg {
+  margin-inline: 25px;
+}
+
+.m-in-xl {
+  margin-inline: 30px;
+}
+
+.m-in-xxl {
+  margin-inline: 40px;
+}
+
+.m-bl-sm {
+  margin-block: 10px;
+}
+
+.m-bl-normal {
+  margin-block: 15px;
+}
+
+.m-bl-md {
+  margin-block: 20px;
+}
+
+.m-bl-lg {
+  margin-block: 25px;
+}
+
+.m-bl-xl {
+  margin-block: 30px;
+}
+
+.m-bl-xxl {
+  margin-block: 40px;
+}
+
 header {
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 2rem;
 }
 header nav {
@@ -40,7 +147,6 @@ header nav div img {
   max-width: 50px;
 }
 header nav div a {
-  margin-inline: 0.5rem;
   color: white;
   text-decoration: none;
 }
@@ -56,6 +162,7 @@ header div div:first-child {
 }
 header div div:first-child h1 {
   margin: 0;
+  font-size: 2em;
 }
 header div div:first-child p {
   font-style: italic;
@@ -63,13 +170,6 @@ header div div:first-child p {
 }
 header div div:first-child div {
   justify-content: start;
-}
-header div div:first-child div button {
-  display: inline-block;
-  border: none;
-  margin-right: 1rem;
-  cursor: pointer;
-  width: fit-content;
 }
 header div div:first-child div button::hover {
   border: 2px solid white;
@@ -80,6 +180,7 @@ header div div img {
 }
 
 section {
+  font-family: "Open Sans", sans-serif;
   background-color: bisque;
   padding: 1.5rem;
 }

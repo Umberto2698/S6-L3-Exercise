@@ -1,0 +1,21 @@
+$palette: (
+  blue: #0e6cff,
+  purple: #640fc5,
+  orange: #ff8700,
+  green: #4caf50,
+);
+
+@each $val, $color in $palette {
+  .bc-#{$val} {
+    background-color: $color;
+  }
+}
+
+%hero-btn {
+  font-family: inherit;
+  display: inline-block;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}

@@ -1,0 +1,28 @@
+$type: (
+  in: inline,
+  bl: block,
+);
+
+$value: (
+  sm: 10px,
+  normal: 15px,
+  md: 20px,
+  lg: 25px,
+  xl: 30px,
+  xxl: 40px,
+);
+
+@each $key, $val in $type {
+  @each $k, $v in $value {
+    .p-#{$key}-#{$k} {
+      padding-#{$val}: $v;
+    }
+  }
+}
+@each $key, $val in $type {
+  @each $k, $v in $value {
+    .m-#{$key}-#{$k} {
+      margin-#{$val}: $v;
+    }
+  }
+}
