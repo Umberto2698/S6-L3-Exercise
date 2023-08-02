@@ -58,6 +58,7 @@ header {
     div {
       img {
         height: 200px;
+        @include floating(black);
       }
     }
   }
@@ -77,11 +78,12 @@ section {
     > div {
       border: 2px solid gray;
       background-color: white;
-
+      cursor: pointer;
       img {
         width: 150px;
         height: 100px;
         object-fit: cover;
+        @include floating(none);
       }
       div {
         padding: 0.5rem;
