@@ -1,0 +1,68 @@
+@mixin fade-in($duration, $start-point, $end-point, $delay, $name) {
+  @if ($name==h1) {
+    @keyframes fadeInH1 {
+      0% {
+        opacity: 0;
+        translate: 0px $start-point;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        translate: 0px $end-point;
+        opacity: 1;
+      }
+    }
+    animation: fadeInH1 $duration $delay both linear;
+  } @else if($name==p) {
+    @keyframes fadeInP {
+      0% {
+        opacity: 0;
+        translate: 0px $start-point;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        translate: 0px $end-point;
+        opacity: 1;
+      }
+    }
+    animation: fadeInP $duration $delay both ease-in;
+  } @else if($name==button) {
+    @keyframes fadeInBtn {
+      0% {
+        opacity: 0;
+        translate: 0px $start-point;
+      }
+      25% {
+        opacity: 0.5;
+        translate: 0px $end-point;
+      }
+      50% {
+        opacity: 0.5;
+        translate: 0px $start-point;
+      }
+      100% {
+        translate: 0px $end-point;
+        opacity: 1;
+      }
+    }
+    animation: fadeInBtn $duration $delay both ease-out;
+  } @else if($name==image) {
+    @keyframes fadeInImg {
+      0% {
+        opacity: 0;
+        translate: 0px $start-point;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        translate: 0px $end-point;
+        opacity: 1;
+      }
+    }
+    animation: fadeInImg $duration $delay both linear;
+  }
+}
